@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-jost: 'Jost', sans-serif;
+  --gold: #C49A4A;
+  --gold-light: #D4AF6E;
+  --cream: #FAF7F0;
+  --cream-dark: #F0E8D8;
+  --charcoal: #2C2420;
+  --taupe: #8D7D6A;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-jost);
+}
+
+body {
+  background-color: #FDFCF8;
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-cormorant); }
+.font-body { font-family: var(--font-jost); }
+
+/* Gold divider */
+.divider-gold {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Luxury card hover */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(44,36,32,0.12);
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Gold button */
+.btn-gold {
+  background: linear-gradient(135deg, #C49A4A 0%, #D4AF6E 50%, #B8860B 100%);
+  color: white;
+  font-family: var(--font-jost);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.875rem 2rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #B8860B 0%, #C49A4A 50%, #D4AF6E 100%);
+  box-shadow: 0 8px 25px rgba(196,154,74,0.4);
+  transform: translateY(-1px);
+}
+
+/* WhatsApp floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  animation: pulse-wa 3s infinite;
+}
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+}
+
+/* Skeleton loading */
+.skeleton {
+  background: linear-gradient(90deg, #f0e8d8 25%, #e8dcc8 50%, #f0e8d8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(250,247,240,0.97) 0%,
+    rgba(250,247,240,0.9) 40%,
+    rgba(250,247,240,0.5) 70%,
+    rgba(250,247,240,0.1) 100%
+  );
+}
+
+/* Section entrance animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAF7F0; }
+::-webkit-scrollbar-thumb { background: #C4B9A8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C49A4A; }
+
+/* Input styles */
+.input-luxury {
+  border: 1px solid #E0D2B0;
+  background: white;
+  font-family: var(--font-jost);
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+.input-luxury:focus {
+  border-color: #C49A4A;
+  box-shadow: 0 0 0 3px rgba(196,154,74,0.1);
+}
+
+/* Badge */
+.badge-new {
+  background: linear-gradient(135deg, #C49A4A, #D4AF6E);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+}
+.badge-popular {
+  background: #2C2420;
+  color: #D4AF6E;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+}
+
+/* Grain texture overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
