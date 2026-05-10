@@ -3,6 +3,7 @@ import CategoriesSection from '@/components/home/CategoriesSection'
 import FeaturedSection from '@/components/home/FeaturedSection'
 import AboutSection from '@/components/home/AboutSection'
 import ServicesSection from '@/components/home/ServicesSection'
+import VideoSection from '@/components/home/VideoSection'
 import ReviewsSection from '@/components/home/ReviewsSection'
 import ContactSection from '@/components/home/ContactSection'
 import productsData from '@/data/products.json'
@@ -19,6 +20,7 @@ export default function HomePage() {
       <FeaturedSection products={featuredProducts} />
       <AboutSection />
       <ServicesSection />
+      <VideoSection />
       <ReviewsSection />
       <ContactSection />
     </>
