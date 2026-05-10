@@ -34,6 +34,12 @@ export interface Review {
   room?: string
 }
 
+export interface Video {
+  id: string
+  title: string
+  category: 'curtains' | 'tulle' | 'blinds'
+}
+
 export interface FilterState {
   category: string
   search: string
