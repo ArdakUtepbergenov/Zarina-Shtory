@@ -15,7 +15,7 @@ export default function Header() {
 
   const navLinks = [
     { href: '/catalog', label: 'Каталог' },
-    { href: '/catalog?category=curtains', label: 'Шторы' },
+    { href: '/curtains', label: 'Шторы' },
     { href: '/catalog?category=tulle', label: 'Тюль' },
     { href: '/catalog?category=blinds', label: 'Жалюзи' },
     { href: '/#contacts', label: 'Контакты' },
