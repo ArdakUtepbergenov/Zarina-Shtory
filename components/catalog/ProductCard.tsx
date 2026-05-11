@@ -10,6 +10,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const waLink = getWhatsAppLink(product)
+  const displayTitle = product.title || 'Жалюзи на заказ'
 
   return (
     <article className="product-card group bg-white border border-cream-200">
@@ -17,20 +18,16 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Link href={`/product/${product.id}`} className="block img-zoom relative aspect-[3/4] overflow-hidden bg-cream-100">
         <img
           src={product.images[0]}
-          alt={product.title}
+          alt={displayTitle}
           className="w-full h-full object-cover"
           loading="lazy"
         />
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-1">
-          {product.new && (
-            <span className="badge-new">Новинка</span>
-          )}
-          {product.popular && (
-            <span className="badge-popular">Хит</span>
-          )}
+          {product.new && <span className="badge-new">Новинка</span>}
+          {product.popular && <span className="badge-popular">Хит</span>}
         </div>
-        {/* Hover overlay with quick action */}
+        {/* Hover overlay */}
         <div className="absolute inset-0 bg-charcoal-900/0 group-hover:bg-charcoal-900/20 transition-all duration-300 flex items-end justify-center pb-4 opacity-0 group-hover:opacity-100">
           <a
             href={waLink}
@@ -50,10 +47,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="p-4">
         <div className="text-[10px] tracking-widest uppercase text-gold-500 font-body font-medium mb-1">
           {CATEGORY_LABELS[product.category]}
+          {product.type ? ` · ${product.type}` : ''}
         </div>
         <Link href={`/product/${product.id}`}>
           <h3 className="font-display text-base font-medium text-charcoal-900 leading-snug hover:text-gold-600 transition-colors line-clamp-2 mb-2">
-            {product.title}
+            {displayTitle}
           </h3>
         </Link>
         <div className="flex items-center justify-between">
