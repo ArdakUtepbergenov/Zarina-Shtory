@@ -35,7 +35,7 @@ export default function CatalogFilters({
     (key: string, value: string) => {
       // Шторы — отдельная страница с видео
       if (key === 'category' && value === 'curtains') {
-        router.push('/catalog/curtains')
+        router.push('/curtains')
         return
       }
       const params = new URLSearchParams(searchParams.toString())
