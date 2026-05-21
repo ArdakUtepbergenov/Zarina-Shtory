@@ -9,8 +9,10 @@ export const metadata: Metadata = {
     default: 'Zarina Шторы — Шторы на заказ в Атырау | 15 лет опыта',
     template: '%s | Zarina Шторы Атырау',
   },
+
   description:
     'Шторы, тюль и жалюзи на заказ в Атырау. 15 лет опыта. Бесплатный замер и монтаж. Более 500 моделей. Производство в день обращения.',
+
   keywords: [
     'шторы на заказ Атырау',
     'тюль Атырау',
@@ -20,18 +22,46 @@ export const metadata: Metadata = {
     'пошив штор',
     'Zarina шторы',
   ],
+
   authors: [{ name: 'Zarina Шторы' }],
+
   creator: 'Zarina Шторы',
+
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://zarina-shtory.kz',
+    url: 'https://www.zarinashtory.com',
     siteName: 'Zarina Шторы',
     title: 'Zarina Шторы — Шторы на заказ в Атырау',
-    description: 'Шторы, тюль и жалюзи на заказ в Атырау. 15 лет опыта. Бесплатный замер и монтаж.',
+    description:
+      'Шторы, тюль и жалюзи на заказ в Атырау. 15 лет опыта. Бесплатный замер и монтаж.',
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   viewport: 'width=device-width, initial-scale=1',
+
+  icons: {
+    icon: [
+      {
+        url: '/favicon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png',
+      },
+      {
+        url: '/favicon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+    ],
+
+    apple: '/apple-touch-icon.png',
+  },
+
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({
