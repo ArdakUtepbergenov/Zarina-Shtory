@@ -116,7 +116,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-charcoal-700 py-4 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-taupe-500 font-body">
-          <span>© 2024 Zarina Шторы. Все права защищены.</span>
+          <span>© 2026 Zarina Шторы. Все права защищены.</span>
           <span>Атырау, Казахстан</span>
         </div>
       </div>
