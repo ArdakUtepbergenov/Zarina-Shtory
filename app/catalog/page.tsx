@@ -7,10 +7,27 @@ import productsData from '@/data/products.json'
 import { Product } from '@/utils/types'
 import { filterProducts, paginateProducts, ITEMS_PER_PAGE, CATEGORY_LABELS } from '@/utils/helpers'
 
+
 export const metadata: Metadata = {
-  title: 'Каталог штор, тюля и жалюзи',
-  description: 'Более 500 моделей штор, тюля и жалюзи на заказ в Атырау. Бесплатный замер и монтаж.',
+  title: 'Купить шторы в Атырау — каталог | Zarina',
+  description:
+    'Каталог штор в Атырау: шторы на заказ, тюль и жалюзи. Подбор тканей, индивидуальный пошив, замер и монтаж в студии Zarina.',
+
+  alternates: {
+    canonical: '/catalog',
+  },
+
+  openGraph: {
+    type: 'website',
+    locale: 'ru_KZ',
+    url: '/catalog',
+    siteName: 'Zarina Шторы',
+    title: 'Купить шторы в Атырау — каталог Zarina',
+    description:
+      'Выберите шторы, тюль и жалюзи. Индивидуальный пошив и услуги в Атырау.',
+  },
 }
+
 
 interface PageProps {
   searchParams: {
