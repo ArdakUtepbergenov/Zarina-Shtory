@@ -23,18 +23,22 @@ export default function HeroSection() {
               15 лет в Атырау
             </span>
           </div>
+          
+{/* Headline */}
+<h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-charcoal-900 leading-[1.05] mb-4">
+  Шторы
+  <br />
+  <span className="italic text-gold-500">на заказ</span>
+  <br />
+  в Атырау
+</h1>
 
-          {/* Headline */}
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-charcoal-900 leading-[1.05] mb-4">
-            Шторы<br />
-            <span className="italic text-gold-500">на заказ</span><br />
-            в Атырау
-          </h1>
+<p className="font-body text-base text-taupe-600 leading-relaxed mb-8 max-w-sm">
+  Купить шторы в Атырау с индивидуальным пошивом по вашим размерам.
+  Подберём ткани, тюль и оформление для вашего интерьера.
+  Бесплатный замер и профессиональный монтаж.
+</p>
 
-          <p className="font-body text-base text-taupe-600 leading-relaxed mb-8 max-w-sm">
-            Создаём уют в вашем доме. Шторы, тюль и жалюзи ручной работы. 
-            Бесплатный замер и монтаж.
-          </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
