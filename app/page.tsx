@@ -14,9 +14,11 @@ import productsData from '@/data/products.json'
 import type { Product } from '@/utils/types'
 
 export const metadata: Metadata = {
-  title: 'Купить шторы в Атырау — пошив на заказ | Zarina',
+  metadataBase: new URL('https://www.zarinashtory.com'),
+
+  title: 'Купить шторы в Атырау — на заказ | Zarina',
   description:
-    'Студия Zarina в Атырау: индивидуальный пошив штор, подбор тканей, тюль и жалюзи. Узнайте условия замера и монтажа, посмотрите каталог и примеры работ.',
+    'Купить шторы в Атырау в студии Zarina. Индивидуальный пошив, тюль, подбор тканей, замер и монтаж. Посмотрите каталог и примеры наших работ.',
 
   alternates: {
     canonical: '/',
@@ -25,11 +27,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ru_KZ',
-    title: 'Шторы на заказ в Атырау — Zarina',
-    description:
-      'Индивидуальный пошив штор, подбор тканей, тюль и жалюзи в Атырау.',
     url: '/',
     siteName: 'Zarina Шторы',
+    title: 'Купить шторы в Атырау — Zarina',
+    description:
+      'Шторы на заказ в Атырау: индивидуальный пошив, тюль, подбор тканей, замер и монтаж.',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 }
 
