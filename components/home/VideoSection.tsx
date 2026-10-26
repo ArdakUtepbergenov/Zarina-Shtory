@@ -159,7 +159,7 @@ export default function VideoSection() {
         {/* Instagram CTA */}
         <div className="mt-10 text-center">
           <a
-            href="https://instagram.com/zarina.shtory.atyrau"
+            href="https://instagram.com/zarina.shtory.edition"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-charcoal-700 hover:text-gold-600 font-body font-medium border-b border-charcoal-300 hover:border-gold-400 transition-all pb-0.5"
