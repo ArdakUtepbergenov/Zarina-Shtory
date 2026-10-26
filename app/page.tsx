@@ -14,7 +14,7 @@ import productsData from '@/data/products.json'
 import type { Product } from '@/utils/types'
 
 export const metadata: Metadata = {
-  title: 'Шторы на заказ в Атырау — пошив, тюль и жалюзи | Zarina',
+  title: 'Купить шторы в Атырау — пошив на заказ | Zarina',
   description:
     'Студия Zarina в Атырау: индивидуальный пошив штор, подбор тканей, тюль и жалюзи. Узнайте условия замера и монтажа, посмотрите каталог и примеры работ.',
 
