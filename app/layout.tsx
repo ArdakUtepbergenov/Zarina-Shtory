@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: 'website',
-    locale: 'ru_RU',
+    locale: 'ru_KZ',
     url: 'https://www.zarinashtory.com',
     siteName: 'Zarina Шторы',
     title: 'Zarina Шторы — Шторы на заказ в Атырау',
