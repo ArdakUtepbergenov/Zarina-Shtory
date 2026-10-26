@@ -41,7 +41,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://instagram.com/zarina.shtory.atyrau"
+                href="https://instagram.com/zarina.shtory.edition"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"
@@ -54,7 +54,7 @@ export default function ContactSection() {
                 <div>
                   <div className="text-[10px] tracking-widest uppercase text-taupe-500 font-body">Instagram</div>
                   <div className="font-body font-medium text-charcoal-900 group-hover:text-gold-600 transition-colors">
-                    @zarina.shtory.atyrau
+                    @zarina.shtory.edition
                   </div>
                 </div>
               </a>
