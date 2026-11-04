@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=85"
-          alt="Элегантные шторы на заказ"
+          alt="Шторы на заказ в Атырау — студия Zarina"
           className="w-full h-full object-cover"
         />
         <div className="hero-overlay absolute inset-0" />
@@ -33,11 +33,14 @@ export default function HeroSection() {
   в Атырау
 </h1>
 
+
 <p className="font-body text-base text-taupe-600 leading-relaxed mb-8 max-w-sm">
-  Купить шторы в Атырау с индивидуальным пошивом по вашим размерам.
-  Подберём ткани, тюль и оформление для вашего интерьера.
-  Бесплатный замер и профессиональный монтаж.
+  Хотите купить шторы в Атырау? Студия Zarina предлагает
+  индивидуальный пошив штор и тюля по вашим размерам.
+  Поможем подобрать ткани, дизайн и оформление для вашего
+  интерьера. Бесплатный замер, пошив и профессиональный монтаж.
 </p>
+
 
 
           {/* CTA buttons */}
