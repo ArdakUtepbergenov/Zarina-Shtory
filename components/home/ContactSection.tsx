@@ -70,7 +70,7 @@ export default function ContactSection() {
                   <div className="text-[10px] tracking-widest uppercase text-taupe-500 font-body">Адрес</div>
                   <div className="font-body text-charcoal-900">
                     <a
-  href="https://www.google.com/maps/search/?api=1&query=ул.+Мамекұлы+104,+Атырау"
+  href="https://www.google.com/maps?q=47.116005,51.924204"
   target="_blank"
   rel="noopener noreferrer"
   className="font-body text-charcoal-900 hover:text-gold-600"
